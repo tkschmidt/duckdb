@@ -687,9 +687,12 @@ jobs:
       run: ./scripts/node_build.sh 10
 
     - name: Node 12 
-      run: ./scripts/node_build.sh 10
+      run: ./scripts/node_build.sh 12
 
     - name: Node 14 
+      run: ./scripts/node_build.sh 14
+
+    - name: Node 15
       run: ./scripts/node_build.sh 14
 
 
@@ -705,8 +708,32 @@ jobs:
       run: ./scripts/node_build.sh 10
 
     - name: Node 12 
-      run: ./scripts/node_build.sh 10
+      run: ./scripts/node_build.sh 12
 
     - name: Node 14 
+      run: ./scripts/node_build.sh 14
+
+    - name: Node 15
+      run: ./scripts/node_build.sh 14
+
+
+   win-nodejs:
+    name: node.js Windows
+    runs-on: windows-latest
+    #needs: linux-debug
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Node 10
+      run: ./scripts/node_build.sh 10
+
+    - name: Node 12
+      run: ./scripts/node_build.sh 12
+
+    - name: Node 14 
+      run: ./scripts/node_build.sh 14
+
+    - name: Node 15
       run: ./scripts/node_build.sh 14
 
