@@ -725,15 +725,13 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Install
+      run: |
+        choco install nodejs --version 10.23.0 -y --params "/InstallDir:C:\nodejs-10"
+        choco install nodejs --version 12.19.0 -y --params "/InstallDir:C:\nodejs-12"
+        choco install nodejs --version 14.15.0 -y --params "/InstallDir:C:\nodejs-14"
+        choco install nodejs --version 15.1.0 -y --params "/InstallDir:C:\nodejs-15"
+
     - name: Node 10
-      run: ./scripts/node_build.sh 10
-
-    - name: Node 12
-      run: ./scripts/node_build.sh 12
-
-    - name: Node 14 
-      run: ./scripts/node_build.sh 14
-
-    - name: Node 15
-      run: ./scripts/node_build.sh 14
-
+      run: |
+        echo $PATH
