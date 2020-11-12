@@ -717,7 +717,7 @@ jobs:
       run: ./scripts/node_build.sh 14
 
 
-   win-nodejs:
+  win-nodejs:
     name: node.js Windows
     runs-on: windows-latest
     #needs: linux-debug
