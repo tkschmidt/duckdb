@@ -727,8 +727,8 @@ jobs:
 
     - name: Install
       run: |
-        choco install nodejs --version 10.23.0 -y --params "/InstallDir:C:\nodejs-10"
-        choco install nodejs --version 12.19.0 -y --params "/InstallDir:C:\nodejs-12"
+#        choco install nodejs --version 10.23.0 -y --params "/InstallDir:C:\nodejs-10"
+#        choco install nodejs --version 12.19.0 -y --params "/InstallDir:C:\nodejs-12"
         choco install nodejs --version 14.15.0 -y --params "/InstallDir:C:\nodejs-14"
         choco install nodejs --version 15.1.0 -y --params "/InstallDir:C:\nodejs-15"
 
