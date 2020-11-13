@@ -13,7 +13,7 @@
 #include <chrono>
 #include <cassert>
 
-#include "extension_helper.hpp"
+#include "../../extension/extension_helper.hpp"
 
 using namespace duckdb;
 using namespace std;
